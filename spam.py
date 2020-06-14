@@ -1,6 +1,6 @@
 import os,sys,time,re,requests
 from requests import post
-drom time import sleep
+from time import sleep
 def marco():
     ua={
     "Host": "www.idmarco.com",
