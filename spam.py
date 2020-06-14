@@ -10,7 +10,8 @@ def marco():
     }
     d={"phone":no}
     r = requests.post("https://www.idmarco.com/smsotp/login/sendotp/", data=d, headers=ua)
-    print (r.text)
+    if r:
+        print ("\033[1;97mSEND TO \033[90m=>\033[1;92m ",no)
 os.system("clear")
 print ("""\t\033[1;97mSPAM SMS IDMARCO
 \033[1;97mCreator:\033[1;96mFahmiApz
